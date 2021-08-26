@@ -35,6 +35,7 @@ export default function Intro(){
         <Paper className={classes.paper}>
             <h1 className={classes.h1}>Särkivaaran aussiet</h1>
             <Typography className={classes.text}>
+                SKROLLATEN ALASPÄIN NIIN PÄÄSEE NÄKEMÄÄN LISÄÄ SIVULTA
                 Tähän tulee sitten teksti että mikäs se sellainen kenneli sitten on 
                 ja tosta painikkeesta pääsee kattomaan koirakuvia galleriaan. Galleriaan pitää tehdä vielä
                 backendi ettei sivun latausajat oo hirmu pitkiä

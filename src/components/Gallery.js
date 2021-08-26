@@ -1,7 +1,10 @@
+import kiukku from '../pictures/kiukku.jpg';
+import mursu from '../pictures/mursu1.jpg';
 import { Paper } from '@material-ui/core';
 import React from 'react'
 import { makeStyles } from '@material-ui/core';
 import { Typography } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme)=>({
     text:{
@@ -23,20 +26,25 @@ const useStyles = makeStyles((theme)=>({
         opacity: 0.8,
         backgroundColor:'black',
         
+    },
+    pics:{
+        width: '30%',
+        height: '30%'
     }
 }));
 
-export default function Intro(){
+export default function Gallery(){
 
     const classes = useStyles();
 
     return(
-        <Paper className={classes.paper}>
-            <h1 className={classes.h1}>Pentuja ja pentueet</h1>
-            <Typography className={classes.text}>
-                Onhan noita pentueita ollut ja varmaan on joskus lisääkin tulossa :)
-            </Typography>
+        <div>
+        <Paper className>
+            <img className={classes.pics} src={kiukku}/>
         </Paper>
-
+        <Paper className>
+            <img className={classes.pics} src={mursu}/>
+        </Paper>
+        </div>
     );
 }

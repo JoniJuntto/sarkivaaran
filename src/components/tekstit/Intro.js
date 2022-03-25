@@ -23,6 +23,8 @@ const useStyles = makeStyles((theme)=>({
         height:450,
         opacity: 0.8,
         backgroundColor:'black',
+        justifyContent: 'center',
+        alignItems: 'center',
         
     }
 }));
@@ -33,15 +35,12 @@ export default function Intro(){
 
     return(
         <Paper className={classes.paper}>
-            <h1 className={classes.h1}>Särkivaaran aussiet</h1>
+            <h1 className={classes.h1}>Kennel särkivaaran australian paimenkoirat</h1>
             <Typography className={classes.text}>
-                SKROLLATEN ALASPÄIN NIIN PÄÄSEE NÄKEMÄÄN LISÄÄ SIVULTA
-                Tähän tulee sitten teksti että mikäs se sellainen kenneli sitten on 
-                ja tosta painikkeesta pääsee kattomaan koirakuvia galleriaan. Galleriaan pitää tehdä vielä
-                backendi ettei sivun latausajat oo hirmu pitkiä
+                Australian paimenkoirakasvatusta vuodesta 2001. 
             </Typography>
             <Link to="/galleria">
-            <Button variant="contained" color="primary" component={ Link } to='/galleria'>
+            <Button variant="outlined" color="primary" component={ Link } to='/galleria'>
                 tästä galleriaan
             </Button>
             </Link>

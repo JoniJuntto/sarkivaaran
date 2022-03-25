@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme)=>({
         color:'white',
         opacity:1,
         margin: 20,
+        fontSize: 18
     },
     h1:{
         color: 'white',
@@ -32,9 +33,14 @@ export default function Intro(){
 
     return(
         <Paper className={classes.paper}>
-            <h1 className={classes.h1}>Pentuja ja pentueet</h1>
+            <h1 className={classes.h1}>Kasvatit ja pentuja</h1>
             <Typography className={classes.text}>
-                Onhan noita pentueita ollut ja varmaan on joskus lisääkin tulossa :)
+                Pentuja, 2 narttua ja 3 urosta, syntynyt 23.03.2022
+                Yhdistelmästä Mutton buster's the end x Särkivaaran öö kiitti moi                   
+            </Typography>
+            <Typography className={classes.text}>
+                Suunnitelmissa HK1 JK1 EK1 BH Särkivaaran nyt ja tässä x Rinochet Teddy Teddy
+                Keväällä 2022
             </Typography>
         </Paper>
 
